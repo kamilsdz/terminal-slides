@@ -1,2 +1,2 @@
 tags:
-`#color: red`
+'{{color: red}}`

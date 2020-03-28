@@ -1,3 +1,5 @@
+require "base64"
+
 class Printer
   FONTS = {
     standard: 0,
@@ -37,6 +39,11 @@ class Printer
   def set_font(font)
     @font = font
   end
+
+  def set_image(path)
+    Kernel.puts "\033]1337;File=inline=1:#{Base64.strict_encode64(File.open(path).read)}\a"
+  end
+
 
   def puts(string)
     color = font || :standard

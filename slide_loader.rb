@@ -10,8 +10,9 @@ class SlideLoader
       if separator?(line)
         current_page += 1
         file_lines[current_page] = []
+      else
+        file_lines[current_page] << line
       end
-      file_lines[current_page] << line
     end
 
     file_lines
@@ -24,5 +25,4 @@ class SlideLoader
   def separator?(line)
     line.match?(/^---/)
   end
-
 end

@@ -5,7 +5,7 @@ class SlideReader
   end
 
   def read(page)
-    slides[page].each do |line|
+    content(page).each do |line|
       parse(line)
       yield(line)
     end
@@ -32,4 +32,10 @@ class SlideReader
   end
 
   attr_reader :printer, :slides
+
+  private
+
+  def content(page)
+    slides[page].map{|el| el.dup}
+  end
 end

@@ -19,7 +19,7 @@ class Controller
     while true
       input = $stdin.getch
       case input
-      when "q"
+      when "q" || "27"
         exit
       when "D"
         if current_page != 1
