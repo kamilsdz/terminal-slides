@@ -1,0 +1,5 @@
+require_relative "terminal_slides/controller"
+require_relative "terminal_slides/printer"
+require_relative "terminal_slides/run"
+require_relative "terminal_slides/slide_loader"
+require_relative "terminal_slides/slide_reader"

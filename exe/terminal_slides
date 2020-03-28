@@ -1,0 +1,10 @@
+#!/usr/bin/ruby
+
+require "terminal_slides"
+
+if ARGV[0].nil?
+  puts "File name not provided! Exiting.."
+  exit
+end
+
+TerminalSlides::Run.now(ARGV[0])
