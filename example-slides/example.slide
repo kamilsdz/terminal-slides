@@ -1,0 +1,42 @@
+
+
+
+
+
+{{font: green}}
+____    ____  ______    __        ______
+\   \  /   / /  __  \  |  |      /  __  \
+ \   \/   / |  |  |  | |  |     |  |  |  |
+  \_    _/  |  |  |  | |  |     |  |  |  |
+    |  |    |  `--'  | |  `----.|  `--'  |
+    |__|     \______/  |_______| \______/
+
+{{font: cyan}} puts Time.now.strftime("%F")
+{{font: red}} => "2020-03-25"
+
+{{font: cyan}} %x|whoami|
+{{font: read}} => "kamilsdz"
+
+---
+
+{{image: example-slides/msdos.png}}
+
+{{font: bold}} #1. Instruction 🎉
+{{font: standard}}  - press "q" to quit
+  - press left/right arrow to change slide
+
+{{font: bold}} #2. Available options 🔥
+{{font: standard}}  - font: red - to set font
+  - image: image_path - to paste image
+  - --- to separate slides
+
+---
+
+
+
+||  .___________. __    __       ___      .__   __.  __  ___    ____    ____  ______    __    __   __
+||  |           ||  |  |  |     /   \     |  \ |  | |  |/  /    \   \  /   / /  __  \  |  |  |  | |  |
+||  `---|  |----`|  |__|  |    /  ^  \    |   \|  | |  '  /      \   \/   / |  |  |  | |  |  |  | |  |
+||      |  |     |   __   |   /  /_\  \   |  . `  | |    <        \_    _/  |  |  |  | |  |  |  | |  |
+||      |  |     |  |  |  |  /  _____  \  |  |\   | |  .  \         |  |    |  `--'  | |  `--'  | |__|
+||      |__|     |__|  |__| /__/     \__\ |__| \__| |__|\__\        |__|     \______/   \______/  (__)

@@ -5,7 +5,7 @@ require_relative "slide_loader"
 
 begin
 system("tput civis")
-slides = SlideLoader.new("np.slide").load
+slides = SlideLoader.new("example-slides/example.slide").load
 printer = Printer.new
 reader = SlideReader.new(printer, slides)
 controller = Controller.new(reader).execute
