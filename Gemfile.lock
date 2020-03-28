@@ -1,0 +1,20 @@
+PATH
+  remote: .
+  specs:
+    terminal_slides (0.0.2)
+      artii
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    artii (2.1.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  artii
+  terminal_slides!
+
+BUNDLED WITH
+   2.1.4

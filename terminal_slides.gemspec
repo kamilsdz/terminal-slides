@@ -1,6 +1,7 @@
 Gem::Specification.new do |s|
   s.name = "terminal_slides"
-  s.version = "0.0.1"
+  s.homepage = "https://github.com/kamilsdz/terminal-slides"
+  s.version = "0.0.2"
   s.authors = ["Kamil Sopata"]
   s.date = "2020-03-28"
   s.summary = "Simple presentations in terminal"
@@ -15,4 +16,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.bindir = "exe"
   s.executables << "terminal_slides"
+
+  s.add_dependency "artii"
 end

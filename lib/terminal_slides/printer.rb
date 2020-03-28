@@ -1,7 +1,10 @@
+require "artii"
 require "base64"
 
 module TerminalSlides
   class Printer
+    DEFAULT_ASCII_ART = "starwars".freeze
+
     FONTS = {
       standard: 0,
       bold: 1,
@@ -45,6 +48,9 @@ module TerminalSlides
       Kernel.puts "\033]1337;File=inline=1:#{Base64.strict_encode64(File.open(path).read)}\a"
     end
 
+    def set_ascii_art(string)
+      print Artii::Base.new(font: DEFAULT_ASCII_ART).asciify(string)
+    end
 
     def puts(string)
       color = font || :standard

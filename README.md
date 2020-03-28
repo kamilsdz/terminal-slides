@@ -19,6 +19,8 @@ right arrow - next slide
 
 `{{image: path_to_image}}` - adds image (works only in iTerm2)
 
+`{{ascii_art: Hey!}}` - prints ASCII Art string
+
 `---` - page separator
 
 [Example presentation](https://github.com/kamilsdz/terminal-slides/blob/master/example-slides/example.slide)
